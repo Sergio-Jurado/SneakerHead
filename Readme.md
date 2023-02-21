@@ -12,5 +12,9 @@ Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de l
 
 ## :hammer:Funcionalidades del proyecto
 - Crear zapatillas
+
+![captura2](https://user-images.githubusercontent.com/100934318/220479445-48229fc1-5297-423c-91c0-89482d916649.png)
+
+
 - Editar zapatillas
 - Eliminar zapatillas
