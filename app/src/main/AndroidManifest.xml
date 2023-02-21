@@ -12,17 +12,17 @@
         android:theme="@style/Theme.SneakerHead"
         tools:targetApi="31">
         <activity
-            android:name=".VerActivity"
+            android:name=".ShowAllSneaker"
             android:exported="false" />
         <activity
-            android:name=".NuevoActivity"
+            android:name=".AddSneaker"
             android:exported="false" />
         <activity
-            android:name=".EditarActivity"
+            android:name=".EditSneaker"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".ShowSneakers"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".ShowSneakers"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

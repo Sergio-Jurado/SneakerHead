@@ -18,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class ShowSneakers extends AppCompatActivity {
 
     RecyclerView listaSneakers;
     ArrayList<Sneakers> listaArraySneakers;
@@ -30,10 +30,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listaSneakers = findViewById(R.id.listaSneakers);
+        setTitle("Sneaker");
         fabNuevo = findViewById(R.id.favNuevo);
         listaSneakers.setLayoutManager(new LinearLayoutManager(this));
 
-        DbSneakers dbSneakers = new DbSneakers(MainActivity.this);
+        DbSneakers dbSneakers = new DbSneakers(ShowSneakers.this);
 
         listaArraySneakers = new ArrayList<>();
 
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addSneaker(){
-        Intent intent = new Intent(this, NuevoActivity.class);
+        Intent intent = new Intent(this, AddSneaker.class);
         startActivity(intent);
     }
 }

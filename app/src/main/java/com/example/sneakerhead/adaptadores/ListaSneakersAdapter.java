@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sneakerhead.R;
-import com.example.sneakerhead.VerActivity;
+import com.example.sneakerhead.ShowAllSneaker;
 import com.example.sneakerhead.entidades.Sneakers;
 
 import java.util.ArrayList;
@@ -62,7 +62,7 @@ public class ListaSneakersAdapter extends RecyclerView.Adapter<ListaSneakersAdap
                 @Override
                 public void onClick(View view) {
                     Context context = view.getContext();
-                    Intent intent = new Intent(context, VerActivity.class);
+                    Intent intent = new Intent(context, ShowAllSneaker.class);
                     intent.putExtra("ID", listaSneakers.get(getAdapterPosition()).getId());
                     context.startActivity(intent);
                 }

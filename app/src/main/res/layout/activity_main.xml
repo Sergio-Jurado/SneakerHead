@@ -4,18 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1f9bd8"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ShowAllSneaker">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <SearchView
-            android:id="@+id/txtBuscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listaSneakers"
@@ -33,6 +29,6 @@
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/ic_add"
-            app:backgroundTint="@color/design_default_color_primary" />
+            app:backgroundTint="#fdfd96" />
     </LinearLayout>
 </LinearLayout>

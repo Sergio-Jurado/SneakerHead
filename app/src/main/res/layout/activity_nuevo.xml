@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d0e6f7"
     android:orientation="vertical"
-    tools:context=".NuevoActivity">
+    tools:context=".AddSneaker">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
             android:id="@+id/txtViewModelo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1f9bd8"
             android:text="Modelo" />
 
         <EditText
@@ -31,6 +33,7 @@
             android:id="@+id/viewMarca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1f9bd8"
             android:text="Marca" />
 
         <EditText
@@ -46,6 +49,7 @@
             android:id="@+id/viewTalla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1f9bd8"
             android:text="Talla" />
 
         <EditText
@@ -63,7 +67,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Add"
+            android:backgroundTint="#77dd77"
+            android:textColor="@color/black"
+            android:text="Guardar"
             android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

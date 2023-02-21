@@ -8,30 +8,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:background="#1f9bd8"
+        android:backgroundTint="#1f9bd8"
         android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".1"
-            android:padding="2dp"
-            app:srcCompat="@drawable/ic_contacto"
-            tools:srcCompat="@drawable/ic_contacto" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+            android:background="#d0e6f7"
             android:orientation="vertical"
             android:padding="3dp">
 
             <TextView
                 android:id="@+id/viewModelo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:textColor="#000000"
@@ -41,7 +35,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="33dp"
+                android:background="#d0e6f7"
                 android:orientation="horizontal">
 
                 <TextView

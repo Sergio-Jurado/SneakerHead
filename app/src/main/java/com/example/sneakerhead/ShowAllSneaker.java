@@ -15,7 +15,7 @@ import com.example.sneakerhead.db.DbSneakers;
 import com.example.sneakerhead.entidades.Sneakers;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class VerActivity extends AppCompatActivity {
+public class ShowAllSneaker extends AppCompatActivity {
     EditText txtModelo, txtMarca, txtTalla;
 
     Button btnGuarda;
@@ -29,6 +29,7 @@ public class VerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver);
+        setTitle("Opciones de Sneakers");
 
         txtModelo = findViewById(R.id.txtModelo);
         txtMarca = findViewById(R.id.txtMarca);
@@ -51,7 +52,7 @@ public class VerActivity extends AppCompatActivity {
             id = (int) savedInstanceState.getSerializable("ID");
         }
 
-        final DbSneakers dbSneakers = new DbSneakers(VerActivity.this);
+        final DbSneakers dbSneakers = new DbSneakers(ShowAllSneaker.this);
         sneakers = dbSneakers.verSneaker(id);
 
         if(sneakers != null){
@@ -66,7 +67,7 @@ public class VerActivity extends AppCompatActivity {
         fabEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VerActivity.this, EditarActivity.class);
+                Intent intent = new Intent(ShowAllSneaker.this, EditSneaker.class);
                 intent.putExtra("ID", id);
                 startActivity(intent);
             }
@@ -75,7 +76,7 @@ public class VerActivity extends AppCompatActivity {
         fabEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(VerActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(ShowAllSneaker.this);
                 builder.setMessage("¿Desea eliminar esta Sneaker?")
                         .setPositiveButton("SI", new DialogInterface.OnClickListener() {
                             @Override
@@ -97,7 +98,7 @@ public class VerActivity extends AppCompatActivity {
     }
 
     private void lista(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ShowSneakers.class);
         startActivity(intent);
     }
 }

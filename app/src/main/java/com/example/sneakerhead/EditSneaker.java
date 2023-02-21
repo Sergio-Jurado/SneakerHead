@@ -14,7 +14,7 @@ import com.example.sneakerhead.db.DbSneakers;
 import com.example.sneakerhead.entidades.Sneakers;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class EditarActivity extends AppCompatActivity {
+public class EditSneaker extends AppCompatActivity {
 
     EditText txtModelo, txtMarca, txtTalla;
     Button btnGuarda;
@@ -28,6 +28,7 @@ public class EditarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver);
+        setTitle("Editar Sneaker");
 
         txtModelo = findViewById(R.id.txtModelo);
         txtMarca = findViewById(R.id.txtMarca);
@@ -40,7 +41,7 @@ public class EditarActivity extends AppCompatActivity {
         fabEliminar = findViewById(R.id.fabEliminar);
         fabEliminar.setVisibility(View.INVISIBLE);
 
-        final DbSneakers dbSneakers = new DbSneakers(EditarActivity.this);
+        final DbSneakers dbSneakers = new DbSneakers(EditSneaker.this);
         sneakers = dbSneakers.verSneaker(id);
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -66,20 +67,20 @@ public class EditarActivity extends AppCompatActivity {
                     correcto = dbSneakers.editarSneaker(id, txtModelo.getText().toString(), txtMarca.getText().toString(), txtTalla.getText().toString());
 
                     if(correcto){
-                        Toast.makeText(EditarActivity.this, "REGISTRO MODIFICADO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(EditSneaker.this, "REGISTRO MODIFICADO", Toast.LENGTH_LONG).show();
                         verRegistro();
                     } else {
-                        Toast.makeText(EditarActivity.this, "ERROR AL MODIFICAR REGISTRO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(EditSneaker.this, "ERROR AL MODIFICAR REGISTRO", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(EditarActivity.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                    Toast.makeText(EditSneaker.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
     private void verRegistro(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ShowSneakers.class);
         intent.putExtra("ID", id);
         startActivity(intent);
     }

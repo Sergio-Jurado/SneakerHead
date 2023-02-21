@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.sneakerhead.db.DbSneakers;
 
-public class NuevoActivity extends AppCompatActivity {
+public class AddSneaker extends AppCompatActivity {
     EditText txtModelo, txtMarca, txtTalla;
 
     Button btnGuardar;
@@ -24,6 +21,7 @@ public class NuevoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo);
+        setTitle("Añadir Sneaker");
 
         txtModelo =findViewById(R.id.txtModelo);
         txtMarca = findViewById(R.id.txtMarca);
@@ -35,18 +33,18 @@ public class NuevoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(!txtModelo.getText().toString().equals("") && !txtMarca.getText().toString().equals("") && !txtTalla.getText().toString().equals("")) {
 
-                    DbSneakers dbSneakers = new DbSneakers(NuevoActivity.this);
+                    DbSneakers dbSneakers = new DbSneakers(AddSneaker.this);
                     long id = dbSneakers.insertarSneakers(txtModelo.getText().toString(), txtMarca.getText().toString(), txtTalla.getText().toString());
 
                     if (id > 0) {
-                        Toast.makeText(NuevoActivity.this, "REGISTRO GUARDADO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddSneaker.this, "REGISTRO GUARDADO", Toast.LENGTH_LONG).show();
                         clean();
                         showSneaker();
                     } else {
-                        Toast.makeText(NuevoActivity.this, "ERROR AL GUARDAR REGISTRO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(AddSneaker.this, "ERROR AL GUARDAR REGISTRO", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(NuevoActivity.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddSneaker.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -58,7 +56,7 @@ public class NuevoActivity extends AppCompatActivity {
     }
 
     private void showSneaker(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ShowSneakers.class);
         startActivity(intent);
     }
 }
