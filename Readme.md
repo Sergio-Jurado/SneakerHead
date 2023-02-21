@@ -27,5 +27,9 @@ Para editar una zapatilla, debemos pulsar sobre la zapatilla que deseamos editar
 
 Para editar la zapatilla, debemos de pulsar el primer botón, el cual tiene un lápiz en su interior. Tras pulsarlo, nos saldrá un formulario idéntico al que tenemos cuando queremos crear una nueva zapatilla. Tras haber editado los campos, nos aparecerá de nuevo en la pantalla principal los campos editados.
 
-
 - Eliminar zapatillas
+Para eliminar una zapatilla, debemos de pulsar sobre la zapatilla que deseemos eliminar y nos aparecerá lo mismo que al editar la zapatilla, pero en este caso, debemos de pulsar el segundo botón, el cual tiene una papelera, este es el encargado de eliminar la zapatilla. Una vez pulsado el botón nos aparecerá lo siguiente:
+
+![eliminar](https://user-images.githubusercontent.com/100934318/220481279-e6ddf885-9b97-42ba-b4d6-8d6e2556dfc5.png)
+En el caso que pulsemos en SI, nos volverá a la página principal pero habiendo eliminado la zapatilla, sino, al pulsar el NO no eliminará la zapatilla.
+
