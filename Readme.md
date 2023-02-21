@@ -7,7 +7,7 @@ Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de l
 ![primera pantalla](https://user-images.githubusercontent.com/100934318/220478249-cda78270-0556-4897-85aa-352629220bb3.png)
 
 ## :hammer:Funcionalidades del proyecto
-- Crear zapatillas
+- <h2>Crear zapatillas</h2>
 
 Para crear una zapatilla, debemos de hacer clic en el botón amarillo que tenemos en la parte inferior de la pantalla.
 
@@ -19,7 +19,7 @@ Una vez haber pulsado el botón, nos aparece este formulario, el cual debemos de
 Una vez creada, nos volverá a la página de inicio donde podremos observar que la zapatilla que acabamos de crear está en la lista.
 
 
-- Editar zapatillas
+- <h2>Editar zapatillas</h2>
 
 Para editar una zapatilla, debemos pulsar sobre la zapatilla que deseamos editar. Una vez pulsada, nos saldrá lo siguiente:
 
@@ -27,7 +27,7 @@ Para editar una zapatilla, debemos pulsar sobre la zapatilla que deseamos editar
 
 Para editar la zapatilla, debemos de pulsar el primer botón, el cual tiene un lápiz en su interior. Tras pulsarlo, nos saldrá un formulario idéntico al que tenemos cuando queremos crear una nueva zapatilla. Tras haber editado los campos, nos aparecerá de nuevo en la pantalla principal los campos editados.
 
-- Eliminar zapatillas
+- <h2>Eliminar zapatillas</h2>
 
 Para eliminar una zapatilla, debemos de pulsar sobre la zapatilla que deseemos eliminar y nos aparecerá lo mismo que al editar la zapatilla, pero en este caso, debemos de pulsar el segundo botón, el cual tiene una papelera, este es el encargado de eliminar la zapatilla. Una vez pulsado el botón nos aparecerá lo siguiente:
 
