@@ -1,10 +1,6 @@
 <h1 align="center"> Sneakerhead </h1>
-<h2>Índice</h2>
 
-- [¿Qué es Sneakerhead?](#¿Qué-es-Sneakerhead?)
-
-
-<h3 id=#¿Qué-es-Sneakerhead?>¿Qué es Sneakerhead?</h3>
+<h2>¿Qué es Sneakerhead?</h3>
 Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de las zapatillas que tienes en tu colección.
 
 
@@ -24,4 +20,12 @@ Una vez creada, nos volverá a la página de inicio donde podremos observar que 
 
 
 - Editar zapatillas
+
+Para editar una zapatilla, debemos pulsar sobre la zapatilla que deseamos editar. Una vez pulsada, nos saldrá lo siguiente:
+
+![captrua4](https://user-images.githubusercontent.com/100934318/220480549-2372e413-3394-4295-b64b-cc2cb7772889.png)
+
+Para editar la zapatilla, debemos de pulsar el primer botón, el cual tiene un lápiz en su interior. Tras pulsarlo, nos saldrá un formulario idéntico al que tenemos cuando queremos crear una nueva zapatilla. Tras haber editado los campos, nos aparecerá de nuevo en la pantalla principal los campos editados.
+
+
 - Eliminar zapatillas
