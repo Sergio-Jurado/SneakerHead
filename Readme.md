@@ -8,4 +8,4 @@
 Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de las zapatillas que tienes en tu colección.
 
 
-(https://user-images.githubusercontent.com/100934318/220478249-cda78270-0556-4897-85aa-352629220bb3.png)
+![primera pantalla](https://user-images.githubusercontent.com/100934318/220478249-cda78270-0556-4897-85aa-352629220bb3.png)
