@@ -1,7 +1,7 @@
 <h1 align="center"> Sneakerhead </h1>
 <h2>Índice</h2>
 
--[¿Qué es Sneakerhead?](#¿Qué-es-Sneakerhead?)
+- [¿Qué es Sneakerhead?](#¿Qué-es-Sneakerhead?)
 
 
 <h3 id=#¿Qué-es-Sneakerhead?>¿Qué es Sneakerhead?</h3>
