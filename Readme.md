@@ -5,6 +5,7 @@
 
 
 <h3 id=#¿Qué-es-Sneakerhead?>¿Qué es Sneakerhead?</h3>
-Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de zapatillas. Esto puede servir para diferentes usos, el uso primario de la aplicación es el tener una lista de zapatillas que tienes en tu colección, aunque también se puede utilizar para saber otras zapatillas que te gustaría comprar.
+Sneakerhead es una aplicación creada para un uso concreto: hacer una lista de las zapatillas que tienes en tu colección.
 
 
+![primera pantalla](https://user-images.githubusercontent.com/100934318/220478249-cda78270-0556-4897-85aa-352629220bb3.png)
