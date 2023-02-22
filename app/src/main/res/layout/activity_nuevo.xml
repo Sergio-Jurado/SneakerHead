@@ -15,6 +15,7 @@
 
         <TextView
             android:id="@+id/txtViewModelo"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#1f9bd8"
@@ -31,6 +32,8 @@
 
         <TextView
             android:id="@+id/viewMarca"
+            android:textColor="@color/black"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#1f9bd8"
@@ -47,6 +50,8 @@
 
         <TextView
             android:id="@+id/viewTalla"
+            android:textColor="@color/black"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#1f9bd8"
