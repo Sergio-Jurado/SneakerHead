@@ -39,6 +39,7 @@ public class SignIn extends AppCompatActivity {
                     if (id>0){
                         Toast.makeText(SignIn.this, "USUARIO CREADO", Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(SignIn.this, Login.class);
+                        startActivity(intent);
                     } else{
                         Toast.makeText(SignIn.this, "ERROR AL CREAR EL USUARIO", Toast.LENGTH_LONG).show();
 
