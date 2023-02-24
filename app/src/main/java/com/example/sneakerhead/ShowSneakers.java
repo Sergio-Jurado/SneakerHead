@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.sneakerhead.Login.Login;
 import com.example.sneakerhead.adaptadores.ListaSneakersAdapter;
 import com.example.sneakerhead.db.DbSneakers;
 import com.example.sneakerhead.entidades.Sneakers;
@@ -58,6 +59,9 @@ public class ShowSneakers extends AppCompatActivity {
             case R.id.menuNuevo:
                 addSneaker();
                 return true;
+            case R.id.Login:
+                Intent intent = new Intent(ShowSneakers.this, Login.class);
+                startActivity(intent);
 
             default:
                 return super.onOptionsItemSelected(item);

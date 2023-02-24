@@ -45,7 +45,7 @@ public class AddSneaker extends AppCompatActivity {
                     }
                 } else {
                     Toast.makeText(AddSneaker.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
-                }
+                    }
             }
         });
     }

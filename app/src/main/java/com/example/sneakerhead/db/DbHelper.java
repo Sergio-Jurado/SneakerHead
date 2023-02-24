@@ -16,11 +16,15 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("CREATE TABLE zapas (id  INTEGER PRIMARY KEY AUTOINCREMENT, modelo TEXT , marca TEXT  , talla TEXT)");
+
+        sqLiteDatabase.execSQL("CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, usuario TEXT, password TEXT)");
     }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
         sqLiteDatabase.execSQL("DROP TABLE  zapas");
+        sqLiteDatabase.execSQL("DROP TABLE usuario");
     }
 }

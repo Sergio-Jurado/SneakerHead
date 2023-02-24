@@ -5,4 +5,7 @@
     <item
         android:id="@+id/menuNuevo"
         android:title="Nueva Sneaker" />
+    <item
+        android:id="@+id/Login"
+        android:title="Registrarse" />
 </menu>
